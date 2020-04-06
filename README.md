@@ -17,7 +17,45 @@ covid-19 twitter research
   * collecting tweets specifically using the following data driven selection of keywords: *__COVD19, CoronavirusPandemic, COVID-19, 2019nCoV, CoronaOutbreak,coronavirus , WuhanVirus, covid19, coronaviruspandemic, covid-19, 2019ncov, coronaoutbreak, wuhanvirus__*
   * linked words to the top n-grams
   * twitter targeting: language, gender, interest, follower, behavior, geography
+* dataviz
+  * [VARTTA: A Visual Analytics System for Making Sense of Real-Time Twitter Data](https://www.mdpi.com/2306-5729/5/1/20/pdf) 
+    * exploring dataviz challenges in real time
+    * challenges with streaming, cleaning and linking conversations/topics
+    * quantitative (influencer ratio of tweeter) or qualitative (pos/neg sentiment expressed)
+    * understanding sequence and network communications
+    * id themes and intentions of tweets
+    * identities and backgrounds of contributors
+    * typical analysis questions addressed: 
+      1. `Who` is discussing a topic? 
+        * Affiliation & role with/within org, community or group for credibility
+        * background of tweeteer
+      1. `What` is being discussed?
+        * topics, subtopics and active tweeters
+        * use keywords, search terms and nlp/ml (textual and multimedia content)
+      1. `How` does a comment get expressed?
+        * expressed comment on basis of response to another: retweet, quote or reply
+        * new idea: new tweet
+        * asks to join discussion: references to other tweeters (replys or mentions)
+        * initations to participate: answers to previous tweet
+        * emoticons, images, videos, hyperlinks used in conjunction to express
+        * popularity of the topic: gap in time between tweets, retweets and replies
+      1. `Why` does a comment get expressed? (intent)
+        * diversity of twitter and ability of anyone to join discussion
+        * various levels of understanding and expertise
+        * variety of interpretations
+        * news agencies and govs viewed as edu for example
+    * some targeted analysis: dataviz, feature extraction, event detection, anomaly detection, predictive analysis
+    * social media entities: networks, geo-spatial and content
+    * domain targeted analysis: social sciences, journalism, disaster management, crisis and emergency management, politics, finance, sports and entertainment, tourism and urban planning
+    * static visualizations usually suck, BUT intercative + humans for an iterative, joint cognative system between the human-date interaction process where the quality of the interaction drives the quality of insights able to be derived
+    * sanky diagram 
+      - proportion of tweeter categories and content themes for each topic
+      - monitors the information space and gain understanding the underlying volume of users and their intentions under each subtopic
+    * heat map 
+      - the sentiment of each tweeter/contributor
+      
 
+  
 
 ## data [A Twitter Dataset of 100+ million tweets related to COVID-19](https://zenodo.org/record/3735274#.XopzzojYpPY)
 * Banda, Juan M., Tekumalla, Ramya, Wang, Guanyu, Yu, Jingyuan, Liu, Tuo, Ding, Yuning, & Chowell, Gerardo. (2020). A Twitter Dataset of 100+ million tweets related to COVID-19 (Version 3.0) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3735274
