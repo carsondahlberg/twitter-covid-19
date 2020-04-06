@@ -9,13 +9,6 @@ covid-19 twitter research
 * high-level analysis of the corpus
   * n-gram analysis (1,2,3) over time from provided top 1000 of each
   * language, country, region
-* keywords and releated word analysis (twitter targeting):
-  * language
-  * gender
-  * interest
-  * follower
-  * behavior
-  * geography
 * corpus word frequencies
 * vocabulary of each set and word drift
 * sentiment (use a previous classifier from amazon, yelp and apple), or from kaggle toxicity detection website
@@ -23,6 +16,7 @@ covid-19 twitter research
   * initial caronavirus-related keywords: *__coronavirus, 2019nCoV__*
   * collecting tweets specifically using the following data driven selection of keywords: *__COVD19, CoronavirusPandemic, COVID-19, 2019nCoV, CoronaOutbreak,coronavirus , WuhanVirus, covid19, coronaviruspandemic, covid-19, 2019ncov, coronaoutbreak, wuhanvirus__*
   * linked words to the top n-grams
+  * twitter targeting: language, gender, interest, follower, behavior, geography
 
 
 ## data [A Twitter Dataset of 100+ million tweets related to COVID-19](https://zenodo.org/record/3735274#.XopzzojYpPY)
@@ -30,8 +24,11 @@ covid-19 twitter research
 * This dataset is released only for research purposes under a [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 * [Covid-19 Twitter chatter dataset for scientific use](http://www.panacealab.org/covid19/)
 * [https://github.com/thepanacealab/covid19_twitter](https://github.com/thepanacealab/covid19_twitter)
-> Due to the relevance of the COVID-19 global pandemic, we are releasing our dataset of tweets acquired from the Twitter Stream related to COVID-19 chatter. The first 9 weeks of data (from January 1st, 2020 to March 11th, 2020) contain very low tweet counts as we filtered other data we were collecting for other research purposes, however, one can see the dramatic increase as the awareness for the virus spread. Dedicated data gathering started from March 11th to March 30th which yielded over 4 million tweets a day. We have added additional data provided by our new collaborators from January 27th to February 27th, to provide extra longitudinal coverage.
+
+Due to the relevance of the COVID-19 global pandemic, we are releasing our dataset of tweets acquired from the Twitter Stream related to COVID-19 chatter. The first 9 weeks of data (from January 1st, 2020 to March 11th, 2020) contain very low tweet counts as we filtered other data we were collecting for other research purposes, however, one can see the dramatic increase as the awareness for the virus spread. Dedicated data gathering started from March 11th to March 30th which yielded over 4 million tweets a day. We have added additional data provided by our new collaborators from January 27th to February 27th, to provide extra longitudinal coverage.
+
 The data collected from the stream captures all languages, but the higher prevalence are:  `English`, `Spanish`, and `French`. We release all tweets and retweets on the `full_dataset.tsv` file (101,400,452 unique tweets), and a cleaned version with no retweets on the `full_dataset-clean.tsv` file (20,244,746 unique tweets). There are several practical reasons for us to leave the retweets, tracing important tweets and their dissemination is one of them. For NLP tasks we provide the top 1000 frequent terms in `frequent_terms.csv`, the top 1000 bigrams in `frequent_bigrams.csv`, and the top 1000 trigrams in `frequent_trigrams.csv`. Some general statistics per day are included for both datasets in the `statistics-full_dataset.tsv` and `statistics-full_dataset-clean.tsv` files. 
+
 
 ## data description
 As part of our normal daily data collection from the publicly available Twitter stream, we get around 4.4 million tweets a day. From that collection we started analyzing the uptick on Coronavirus related keywords (coronavirus , 2019nCoV) when we first searched for them on February 11th. The tweets we found (the identifiers that is) are available from January 1st to March 11th, this later date is when we started collecting tweets specifically using the following data driven selection of keywords: COVD19, CoronavirusPandemic, COVID-19, 2019nCoV, CoronaOutbreak,coronavirus , WuhanVirus, covid19, coronaviruspandemic, covid-19, 2019ncov, coronaoutbreak, wuhanvirus. These keywords have been used to exclusively grab tweets from the stream API since then, yielding around 4.4 million tweets a day and the bulk of the data found in this dataset.
