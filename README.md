@@ -71,7 +71,9 @@ The data collected from the stream captures all languages, but the higher preval
 ## data description
 As part of our normal daily data collection from the publicly available Twitter stream, we get around 4.4 million tweets a day. From that collection we started analyzing the uptick on Coronavirus related keywords (coronavirus , 2019nCoV) when we first searched for them on February 11th. The tweets we found (the identifiers that is) are available from January 1st to March 11th, this later date is when we started collecting tweets specifically using the following data driven selection of keywords: COVD19, CoronavirusPandemic, COVID-19, 2019nCoV, CoronaOutbreak,coronavirus , WuhanVirus, covid19, coronaviruspandemic, covid-19, 2019ncov, coronaoutbreak, wuhanvirus. These keywords have been used to exclusively grab tweets from the stream API since then, yielding around 4.4 million tweets a day and the bulk of the data found in this dataset.
 
+
 ## resources
+* [visualizing text](https://github.com/JasonKessler/scattertext#visualizing-differences-based-on-only-term-frequencies)
 * [Machine Learning in Python: Main Developments and Technology Trends in Data Science, Machine Learning, and Artificial Intelligence](https://www.mdpi.com/2078-2489/11/4/193)
 * workshops
   * https://aiforsocialgood.github.io/neurips2019/
